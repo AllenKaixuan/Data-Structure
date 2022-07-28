@@ -34,6 +34,7 @@ int search_optimized(int array[], int n, int x)
         left++; // left记录了进行了几次寻找，position则是返回
         right--;
     }
+    return -1;
 }
 
 int main()
