@@ -15,7 +15,7 @@ public:
 
 private:
     T data;
-    ChainNode<T> *link;
+    ChainNode<T> *link = nullptr; // 初始化每个节点都规定其link为空，不用在后续声明
 };
 
 template <class T>
