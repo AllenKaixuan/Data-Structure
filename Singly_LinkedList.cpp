@@ -1,5 +1,6 @@
 /*
-一个基础单向链表结构的实现，只有首指针，没有首节点和尾节点
+一个基础单向链表结构的实现，只有首指针，没有头节点和尾指针，因此空链表没有节点，
+只有首指针为空；
 */
 #include <iostream>
 using namespace std;
@@ -153,8 +154,8 @@ Chain<T> &Chain<T>::Insert(int k, const T &x)
     }
     else // 插入到表头
     {
-        insertNode->link = first; // 新节点指向首节点
-        first = insertNode;       //调整首指针
+        insertNode->link = first; // 新节点指向首指针，当插入的是空链表时首指针为0，相当于插入了第一个节点
+        first = insertNode;       //调整首指针，首指针指向首节点
     }
     return *this;
 }
