@@ -1,7 +1,8 @@
 /*
 以固定步长搜索排序的数组，然后定位局部区域，使用线性探查；
 性能比较：linear search  <  jump search  <  binary search;
-需要做的比较次数为：((n/m) + m-1) ，当 m = √n时代价最小（n为数组长度，m为步长）
+需要做的比较次数为：((n/m) + m-1) ，当 m = √n时代价最小（n为数组长度，m为步长）;
+时间复杂度为O(√ n)，但是在搜索值是最大或最小值时，比二分搜索效率高
 */
 #include <iostream>
 #include <math.h>
