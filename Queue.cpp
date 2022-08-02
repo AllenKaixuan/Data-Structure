@@ -30,7 +30,7 @@ private:
 
 Queue::Queue()
 {
-	front = rear = nullptr;
+	front = rear = nullptr;  //没有首节点
 }
 
 Queue::~Queue()
